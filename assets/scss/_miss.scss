@@ -1,0 +1,103 @@
+body {
+  color: $paraText;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+a {
+  &:hover {
+    color: $theme2;
+  }
+}
+
+.mainHeading {
+  color: $mainHeadingText;
+}
+.subHeading {
+  color: $subHeadingText;
+}
+.paraText {
+  color: $paraText;
+}
+
+.ff2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+@for $i from 1 through 20 {
+  .fs#{$i}vw {
+    font-size: #{$i}vw;
+  }
+
+  @media (max-width: 767px) {
+    .mfs#{$i}vw {
+      font-size: #{$i}vw;
+    }
+  }
+}
+@for $i from 1 through 100 {
+  .fs#{$i} {
+    font-size: #{$i}px;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    .xxlfs#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .xlfs#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .lgfs#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .mfs#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+}
+
+@for $i from 1 through 100 {
+  .lh#{$i} {
+    line-height: #{$i}px;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    .xxllh#{$i} {
+      line-height: #{$i}px !important;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .xllh#{$i} {
+      line-height: #{$i}px !important;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .lglh#{$i} {
+      line-height: #{$i}px !important;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .mlh#{$i} {
+      line-height: #{$i}px !important;
+    }
+  }
+}
+
+@for $i from 1 through 9 {
+  .fw#{$i}00 {
+    font-weight: #{$i}00;
+  }
+}

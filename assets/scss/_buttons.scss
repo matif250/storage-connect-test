@@ -1,0 +1,79 @@
+.btn {
+  
+  @media screen and (max-width: 991px) {
+    &-lg {
+      &-block {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-md {
+      &-block {
+        width: 100%;
+      }
+    }
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
+
+  border-radius: 10px;
+
+  &-theme1 {
+    color: $white;
+    background-color: $theme1;
+    border-color: $theme1;
+    
+    &:hover {
+      color: $theme2;
+    }
+  }
+
+  &-theme2 {
+    color: $mainHeadingText;
+    background-color: $theme2;
+    border-color: $theme2;
+  }
+  
+  &-black {
+    color: $theme2;
+    background-color: $black;
+    border-color: $black;
+  }
+
+  &-white {
+    color: $paraText;
+    background-color: $white;
+    border-color: $white;
+  }
+
+  &-outline {
+    &-theme1 {
+      color: $theme1;
+      border-color: $theme1;
+    }
+
+    &-theme2 {
+      color: $black;
+      border-color: $theme2;
+    }
+
+    &-black {
+      color: $black;
+      border-color: $black;
+    }
+
+    &-white {
+      color: $white;
+      border-color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

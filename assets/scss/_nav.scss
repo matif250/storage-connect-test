@@ -1,0 +1,151 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  transition: all .3s;
+  z-index: 99;
+  border: 0;
+  box-shadow: 0;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    background: $white;
+    transition: all .3s;
+  }
+
+  &.sticky {
+    background: $theme1;
+    padding: .5rem 1.5rem !important;
+    box-shadow: 0 0 15px rgba($black, .5);
+    
+    &::before {
+      left: 0%;
+      right: 0%;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $white;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 3px 15px;
+        margin: 0 10px;
+        &:hover {
+          color: $theme2 !important;
+        }
+      }
+
+      &.contact-item {
+
+        .nav-link {
+          background: $theme2;
+          color: $mainHeadingText !important;
+          border-radius: 10px;
+          font-size: 18px;
+          
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar-collapse {
+    background: $white;
+    margin-top: 10px;
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $subHeadingText;
+          margin: 10px;
+
+          
+        }
+      }
+    }
+
+    &.collapse {
+
+      &.show {
+        background: $white;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      position: relative;
+      height: 0px;
+      width: 30px;
+      transition: all .3s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: $theme2;
+        top: 0px;
+        transition: all .3s;
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: $theme2;
+        bottom: 0px;
+        transition: all .3s;
+        transform: rotate(45deg);
+      }
+    }
+
+    &.collapsed {
+
+      .navbar-toggler-icon {
+        position: relative;
+        width: 30px;
+        height: 2px;
+        background: $white;
+        transition: all .3s;
+
+        &::before {
+          background: $white;
+          top: -8px;
+          transition: all .3s;
+          transform: rotate(0deg);
+        }
+
+        &::after {
+          background: $white;
+          bottom: -8px;
+          transition: all .3s;
+          transform: rotate(0deg);
+        }
+      }
+
+
+    }
+  }
+}

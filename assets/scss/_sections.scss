@@ -1,0 +1,197 @@
+.featuredSelfStoragesSection {
+  background: url('../images/featured-bg.svg') no-repeat left top -180px;
+
+  .pItem {
+    background: #F6F8FD;
+    border: 1px solid #F9F9F9;
+    border-radius: 10px;
+  }
+}
+
+.selfStoragesSection {
+  background: url('../images/self-storages-bg.svg') no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/self-left-circle.svg') no-repeat center left;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/self-right-circle.svg') no-repeat top 23% right;
+  }
+
+  .pItem {
+    border: 1px solid #F9F9F9;
+    box-shadow: 0px 10px 40px rgba($mainHeadingText, 0.4);
+    border-radius: 10px;
+  }
+}
+
+.selfStorageforSaleSection {
+  background: #E8EFFF url('../images/sale-img.png') no-repeat right 10% bottom;
+  position: relative;
+  border-radius: 0px 0px 300px 0px;
+  transition: all .3s;
+  
+  @media screen and (max-width: 991px) {
+    background-size: 200px;
+    border-radius: 0px 0px 150px 0px;
+  }
+
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/sale-left-circle.svg') no-repeat bottom left;
+  }
+}
+
+.buyASelfStorageSection {
+  background: $white url('../images/buy-a-stroge.svg') no-repeat center center;
+  position: relative;
+  background-size: cover;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -110px;
+    background: url('../images/girl-img.png') no-repeat bottom left 2%;
+
+    @media screen and (max-width: 991px) {
+      background-size: 200px;
+      bottom: -30px;
+      background-position: bottom right -2%;
+    }
+  }
+}
+
+.learnEverythingSection {
+  background: $theme1 url('../images/learn-bg.svg') no-repeat center center;
+  position: relative;
+  border-radius: 300px 0px 0px 0px;
+  
+  @media screen and (max-width: 991px) {
+    border-radius: 150px 0px 0px 0px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/learn-left-circle.svg') no-repeat bottom 15% left;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/learn-right-circle.svg') no-repeat top 23% right;
+  }
+
+  .learnCard {
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba($black, 0.4);
+
+    .learnInfo {
+      padding: 20px 10px 5px;
+    }
+
+    .learnGadget {
+      padding: 0px 10px;
+      display: flex;
+      align-items: center;
+
+      >div {
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.anyQueriesSection {
+  background: #E8EFFF url("../images/buy-a-stroge.svg") no-repeat center center;
+  background-size: cover;
+
+  .icons {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('../images/any-queries-circle-icon.svg') no-repeat bottom 10px left 10px;
+      // z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('../images/any-queries-envelop-icon.svg') no-repeat top right 13%;
+    }
+  }
+
+  .anyQueriesContent {
+    background: rgba($white, 0.9);
+    box-shadow: 0px 30px 40px rgba($theme1, 0.1);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+  }
+}
