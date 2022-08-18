@@ -6,6 +6,18 @@
     border: 1px solid #F9F9F9;
     border-radius: 10px;
   }
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background-color: $white;
+      border: 1px solid $black;
+      width: 26px;
+      height: 26px;
+      &.swiper-pagination-bullet-active {
+        background-color: rgba($theme1, 1.0);
+        border: 1px solid rgba($theme1, 1.0);
+      }
+    }
+  }
 }
 
 .selfStoragesSection {

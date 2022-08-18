@@ -88,9 +88,9 @@
         </div>
 
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper pb-5">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper pb-5">
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="card pItem">
@@ -529,7 +529,7 @@
             </div>
             <div class="col-lg-3">
               <div class="learnCard bg-white p-1">
-                <img class="w-100" src="assets/images/image17.png" alt="Storage Image">
+                <img class="w-100" src="assets/images/image16.png" alt="Storage Image">
                 <div class="learnInfo">
                   <h3 class="subHeading fs20 mfs16 fw600">Everything you need to know about how to buy a Self Storage</h3>
                 </div>
@@ -540,7 +540,7 @@
                   </div>
                   <div class="learnStatus">
                     <img src="assets/images/buy.svg" alt="Clock">
-                    <span>Buy</span>
+                    <span>Operate</span>
                   </div>
                   <div class="learnProImage">
                     <img src="assets/images/p-image.png" alt="Clock">
@@ -556,7 +556,7 @@
             </div>
             <div class="col-lg-3">
               <div class="learnCard bg-white p-1">
-                <img class="w-100" src="assets/images/image17.png" alt="Storage Image">
+                <img class="w-100" src="assets/images/image7.png" alt="Storage Image">
                 <div class="learnInfo">
                   <h3 class="subHeading fs20 mfs16 fw600">Everything you need to know about how to buy a Self Storage</h3>
                 </div>
@@ -567,7 +567,7 @@
                   </div>
                   <div class="learnStatus">
                     <img src="assets/images/buy.svg" alt="Clock">
-                    <span>Buy</span>
+                    <span>Sell</span>
                   </div>
                   <div class="learnProImage">
                     <img src="assets/images/p-image.png" alt="Clock">
@@ -583,7 +583,7 @@
             </div>
             <div class="col-lg-3">
               <div class="learnCard bg-white p-1">
-                <img class="w-100" src="assets/images/image17.png" alt="Storage Image">
+                <img class="w-100" src="assets/images/image19.png" alt="Storage Image">
                 <div class="learnInfo">
                   <h3 class="subHeading fs20 mfs16 fw600">Everything you need to know about how to buy a Self Storage</h3>
                 </div>
@@ -743,48 +743,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-  <script type="text/javascript">
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-
-      // Responsive breakpoints
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 22
-        },
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 22
-        }
-      },
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-      },
-
-
-    });
-
-    window.onscroll = function () { myFunction() };
-
-    var header = document.getElementById("navbar");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-
+  <script type="text/javascript" src="assets/js/custom.js">
+    
   </script>
 </body>
 
